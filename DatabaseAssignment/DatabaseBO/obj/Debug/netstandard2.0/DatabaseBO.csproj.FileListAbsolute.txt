@@ -1,0 +1,13 @@
+D:\net sol\DatabaseAssignment\DatabaseBO\bin\Debug\netstandard2.0\DatabaseBO.deps.json
+D:\net sol\DatabaseAssignment\DatabaseBO\bin\Debug\netstandard2.0\DatabaseBO.dll
+D:\net sol\DatabaseAssignment\DatabaseBO\bin\Debug\netstandard2.0\DatabaseBO.pdb
+D:\net sol\DatabaseAssignment\DatabaseBO\bin\Debug\netstandard2.0\DatabaseDataAccess.dll
+D:\net sol\DatabaseAssignment\DatabaseBO\bin\Debug\netstandard2.0\DatabaseEntities.dll
+D:\net sol\DatabaseAssignment\DatabaseBO\bin\Debug\netstandard2.0\DatabaseDataAccess.pdb
+D:\net sol\DatabaseAssignment\DatabaseBO\bin\Debug\netstandard2.0\DatabaseEntities.pdb
+D:\net sol\DatabaseAssignment\DatabaseBO\obj\Debug\netstandard2.0\DatabaseBO.csprojAssemblyReference.cache
+D:\net sol\DatabaseAssignment\DatabaseBO\obj\Debug\netstandard2.0\DatabaseBO.AssemblyInfoInputs.cache
+D:\net sol\DatabaseAssignment\DatabaseBO\obj\Debug\netstandard2.0\DatabaseBO.AssemblyInfo.cs
+D:\net sol\DatabaseAssignment\DatabaseBO\obj\Debug\netstandard2.0\DatabaseBO.csproj.CopyComplete
+D:\net sol\DatabaseAssignment\DatabaseBO\obj\Debug\netstandard2.0\DatabaseBO.dll
+D:\net sol\DatabaseAssignment\DatabaseBO\obj\Debug\netstandard2.0\DatabaseBO.pdb

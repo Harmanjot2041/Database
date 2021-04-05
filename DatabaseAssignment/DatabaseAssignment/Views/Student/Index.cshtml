@@ -1,0 +1,140 @@
+﻿@model List<DatabaseEntities.CustomModel.StudentCustom>
+
+@{
+    ViewData["Title"] = "View";
+}
+
+<h1>Student  List </h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<div class="container">
+    <div class="row">
+    <div class="col-6">
+        @using (Html.BeginForm("Search", "Student", FormMethod.Post))
+        {
+            <div class="input-group">
+                <div class="form-outline">
+                    <input type="search" id="search" name="search" placeholder="Search" class="form-control" />
+
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    Search
+                </button>
+            </div>
+
+        }
+     </div>
+    <div class="col-6">
+        @using (Html.BeginForm("Sorting", "Student", FormMethod.Post))
+        {
+        <div class="form-group">
+            <label class="control-label"> Sort By   </label>
+            
+            Accending  @Html.RadioButton("Order", "Accending")
+            Decending  @Html.RadioButton("Order", "Decending")
+
+            <button type="submit" class="btn btn-primary">
+                Sort
+            </button>
+
+        </div>
+        }
+     </div>
+   </div>
+ </div>
+@if(Model.Count()==0)
+{
+    <h4 class="text-center alert-danger">No Search Result Found </h4>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                StudentName
+            </th>
+            <th>
+                CollegeName
+            </th>
+            <th>
+                TeacherName
+            </th>
+
+            <th>
+                StudentAge
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                FatherName
+            </th>
+            <th>
+                StudentCity
+            </th>
+
+            <th>
+                Gender
+            </th>
+            <th>
+                Edit
+            </th>
+            <th>
+                Details
+            </th>
+            <th>
+                Delete
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CollegeName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TeacherName)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentAge)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FatherName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentCity)
+                </td>
+
+                <td>
+                    @if (item.Gender == true)
+                    {
+                        <div>Male</div>
+                    }
+                    else
+                    {
+                        <div>Female</div>
+                    }
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.StudentId })
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { id = item.StudentId })
+                </td>
+                <td>
+                    @Html.ActionLink("Delete", "Delete", new { id = item.StudentId })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,64 @@
+﻿@model IEnumerable<DatabaseEntities.Entities.Employee>
+
+@{
+    ViewData["Title"] = "Employee";
+}
+
+<h1>Employee</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployeeId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployeeName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployeeAge)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployeeId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployeeName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployeeAge)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            
+        </tr>
+}
+    </tbody>
+</table>
+
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+        @if (ViewBag.PageNo > 1)
+        {
+            <li class="page-item">@Html.ActionLink("Previous", "Employee", new { id = ViewBag.PageNo - 1 }, new { @class = "page-link" })</li>
+        }
+        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+        {
+            <li class="page-item">@Html.ActionLink("" + i, "Employee", new { id = i }, new { @class = "page-link" })</li>
+        }
+        @if (ViewBag.PageNo != ViewBag.TotalPages)
+        {
+            <li class="page-item">@Html.ActionLink("Next", "Employee", new { id = ViewBag.PageNo + 1 }, new { @class = "page-link" })</li>
+        }
+    </ul>
+</nav>

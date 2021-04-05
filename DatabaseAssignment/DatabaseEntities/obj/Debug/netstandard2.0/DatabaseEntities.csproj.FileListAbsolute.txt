@@ -1,0 +1,8 @@
+D:\net sol\DatabaseAssignment\DatabaseEntities\bin\Debug\netstandard2.0\DatabaseEntities.deps.json
+D:\net sol\DatabaseAssignment\DatabaseEntities\bin\Debug\netstandard2.0\DatabaseEntities.dll
+D:\net sol\DatabaseAssignment\DatabaseEntities\obj\Debug\netstandard2.0\DatabaseEntities.AssemblyInfoInputs.cache
+D:\net sol\DatabaseAssignment\DatabaseEntities\obj\Debug\netstandard2.0\DatabaseEntities.AssemblyInfo.cs
+D:\net sol\DatabaseAssignment\DatabaseEntities\bin\Debug\netstandard2.0\DatabaseEntities.pdb
+D:\net sol\DatabaseAssignment\DatabaseEntities\obj\Debug\netstandard2.0\DatabaseEntities.dll
+D:\net sol\DatabaseAssignment\DatabaseEntities\obj\Debug\netstandard2.0\DatabaseEntities.pdb
+D:\net sol\DatabaseAssignment\DatabaseEntities\obj\Debug\netstandard2.0\DatabaseEntities.csprojAssemblyReference.cache
